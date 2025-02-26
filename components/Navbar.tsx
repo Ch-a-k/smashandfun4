@@ -81,7 +81,7 @@ const Navbar = () => {
                   src={scrolled ? "/images/logo.png" : "/images/logo2.png"}
                   alt="Smashandfun Logo"
                   fill
-                  className={`object-contain ${!scrolled && "brightness-0 invert"}`}
+                  className="object-contain"
                   priority
                 />
               </div>
