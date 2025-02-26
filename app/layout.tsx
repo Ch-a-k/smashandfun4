@@ -2,7 +2,6 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { impact, akrobat } from './fonts';
 import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Smashandfun - Pokój Złości | Demolka dla zabawy',
@@ -19,7 +18,6 @@ export default function RootLayout({
       <body>
         <Navbar />
         <main>{children}</main>
-        <Footer />
       </body>
     </html>
   );

@@ -10,6 +10,7 @@ import FacilitiesSection from '@/components/FacilitiesSection';
 import VoucherSection from '@/components/VoucherSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import PartnersSection from '@/components/PartnersSection';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -25,18 +26,12 @@ export default function Home() {
   return (
     <div className="relative">
       <HeroSection videoRef={videoRef} />
-      
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-      >
-        <ServicesSection />
-        <FacilitiesSection />
-        <VoucherSection />
-        <TestimonialsSection />
-        <PartnersSection />
-      </motion.div>
+      <ServicesSection />
+      <FacilitiesSection />
+      <VoucherSection />
+      <TestimonialsSection />
+      <PartnersSection />
+      <Footer />
 
       <div className="fixed bottom-8 right-8 z-50">
         <button
