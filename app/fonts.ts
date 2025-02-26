@@ -1,7 +1,7 @@
 import localFont from 'next/font/local';
 
 export const impact = localFont({
-  src: '../public/fonts/Impact.ttf',
+  src: '../public/fonts/impact.ttf',
   variable: '--font-impact',
 });
 
